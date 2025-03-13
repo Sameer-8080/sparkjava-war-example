@@ -16,7 +16,7 @@ pipeline {
         }
         stage('tomcat-stage') {
             steps {
-                sh 'rm -r /home/ubuntu/apache-tomcat-9.0.102/webapps/sparkjava-hello-world-1.0"
+                sh 'rm -r /home/ubuntu/apache-tomcat-9.0.102/webapps/sparkjava-hello-world-1.0'
                 sh 'cp /home/ubuntu/jenkins/workspace/Job1/target/sparkjava-hello-world-1.0.war /home/ubuntu/apache-tomcat-9.0.102/webapps/'
             }
         }
